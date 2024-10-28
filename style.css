@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: hidden !important;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#nav_top {
+    width: 94.2vw;
+    height: 12vh;
+    padding: 0 4.5vw 0 4vw;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+#nav_top>img {
+    height: 50px;
+}
+#nav_top>button {
+    padding: 7px 16px;
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 24px;
+    color: #fff;
+    white-space: nowrap;
+    background-color: rgb(199, 29, 29);
+    border-style: none;
+    cursor: pointer;
+}
+
+#nav_top>i {
+    font-size: 2.5vw;
+    display: none;
+}
+/* Nav Left Css */
+
+#nav_left {
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    gap: 2vmax;
+    border-right: 2px solid rgb(43, 42, 42);
+}
+
+/* Bottle Image */
+
+#bottle {
+    position: absolute;
+    height: 95vh;
+    top: 0%;
+    left: 38%;
+    z-index: 990;
+    border-image: 0 0 2vmax black;
+}
+#bottlecopy {
+    display: none;
+}
+
+/* Page1 Css */
+
+#page1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#page1 h1 {
+    width: 60vw;
+    background-color: rgb(153, 13, 13);
+    padding-top: 15px;
+    font-family: "Bebas Neue", serif;
+    font-size: 16vw;
+    font-weight: 900;
+    text-align: center;
+    word-spacing: -0.5vw;
+    text-transform: uppercase;
+    line-height: 12vw;
+    background-image: url(/texture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+#page1_dog_image {
+    height: 17vh;
+    position: absolute;
+    top: 15%;
+    left: 34%;
+    transform: rotate(-30deg);
+}
+
+/* Page 2 Css */
+
+
+#page2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw 0 10vw;
+}
+
+#page2_part1 {
+    width: 30vw;
+    height: 85vh;
+}
+#page2_part1 h3 {
+    font-family: "Waiting for the Sunrise", serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+#page2_part1 h1 {
+    width: 27vw;
+    height: 32vh;
+    font-size: 9vw;
+    line-height: 15vh;
+    letter-spacing: -0.1vw;
+    font-weight: 900;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+    word-spacing: -0.2vmax;
+    background: url(/texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+}
+#page2_part1>p {
+    width: 27vw;
+    font-family: "Pangolin", cursive;
+    color: #111;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+#page2_part1>button {
+    padding: 10px 20px;
+    font-family: "Bebas Neue", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    white-space: nowrap;
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#page2_part2 {
+    top:20px;
+    width: 25vw;
+    height: 60vh;
+    padding: 2vmax 3vmax;
+    border: 0.2vmax solid black;
+    box-shadow: 0 0 0.2vmax black;
+    font-family: Gilroy;
+}
+#page2_part2 h3 {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-weight: 900;
+}
+#page2_part2 h5 {
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #666;
+}
+
+#box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.2vmax solid black;
+    margin-bottom: 3vh;
+}
+#page2_part2 p {
+    font-size: 15px;
+    padding-top: 5px;
+    width: 12vw;
+    font-family: "Pangolin", cursive;
+    color: #111;
+    line-height: 13px;
+    font-weight: 500;
+}
+
+#box h2 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Bebas Neue", serif;
+}
+#box h2 span {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Bebas Neue", serif;
+}
+
+/* page 3 css */
+
+
+#page3 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 5vmax 0 10vmax;
+}
+
+#page3 h1 {
+    width: 85vw;
+    font-size: 20vw;
+    line-height: 18vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    background: url(/texture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(177, 29, 29);
+}
+#page3_text {
+    display: flex;
+    justify-content: space-between;
+}
+#page3_text_part1 a img {
+    width: 25vw;
+    margin-top: 2.5vh;
+}
+#page3_text_part1 h5 {
+    width: 25vw;
+    font-size: 1.8vw;
+    margin-top: 1vh;
+    line-height: 4vh;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-weight: 900;
+}
+
+#page3_text_part2 {
+    width: 30vw;
+    padding: 1vmax 2vmax;
+}
+#page3_text_part2 h5 {
+    width: 25vw;
+    font-size: 1vmax;
+    font-family: "Pangolin", cursive;
+    font-weight: 900;
+}
+#page3_text_part2 h2 {
+    margin-top: 2.5vmax;
+    font-family: "Bebas Neue", serif;
+    font-size: 1.5vmax;
+    font-weight: 900;
+    letter-spacing: 0.05vmax;
+
+}
+#page3_text_part2 p {
+    margin-top: 1vh;
+    font-family: "Pangolin", cursive;
+    font-weight: 100;
+}
+
+
+#page4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+#page4_color_image1 {
+    width: 300px;
+    margin: 0 0 0 220px;
+}
+#page4_color_image1_text {
+    width: 200px;
+    position: absolute;
+    top: 4.7%;
+    left: 16.7%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image1_text h4 {
+    width: 80px;
+    font-size: 18px;
+    margin-bottom: 1vh;
+    margin-left: 70px;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    border-bottom:2px solid #000;
+    font-weight: 900;
+    letter-spacing: 0.1vmax;
+    text-transform: uppercase;
+}
+
+
+#page4_color_image2 {
+    width: 300px;
+    margin: 26vh 0 0 -6vh;
+}
+
+#page4_color_image2_text {
+    width: 200px;
+    position: absolute;
+    top: 32%;
+    left: 31%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image2_text h4 {
+    width: 80px;
+    font-size: 18px;
+    margin-left: 60px;
+    font-family: "Bebas Neue", serif;
+    border-bottom: 2px solid #000;
+    font-weight: 900;
+    letter-spacing: 0.1vmax;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+#page4_color_image3 {
+    width: 400px;
+    margin: 160px 0 0 400px;
+}
+#page4_color_image3_text {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 72%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image3_text h4 {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 1vh;
+    margin-left: 85px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", serif;
+    border-bottom: 2px solid white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#page4_color_image4 {
+    width: 17vw;
+    height: 50vh;
+    margin: 45vh 0 0 -165vh;
+    transform: rotate(-17deg);
+}
+
+
+#page5 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#page5 h5 {
+    font-size: 2vmax;
+    font-family: "Waiting for the Sunrise", serif;
+}
+
+#page5 h1 {
+    width: 55vw;
+    font-size: 10vw;
+    line-height: 10vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    background: url(/texture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+}
+
+
+#page5_image_box {
+    width: 80vw;
+    height: 85vh;
+    padding: 0 3vw 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page5_bottel {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+}
+#page5_bottel h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy;
+}
+
+#page5_bottel img {
+    width: 15vw;
+}
+#image11 {
+    height: 48vh;
+}
+#image22 {
+    transform: rotate(-15deg);
+}
+#image33 {
+    height: 47vh;
+    opacity: 0;
+    transform: rotate(-15deg);
+}
+#image44 {
+    transform: rotate(-15deg);
+}
+#image55 {
+    transform: rotate(-15deg);
+}
+#page5_bottel h4 {
+    font-family: "Roboto", serif;
+}
+#page5_bottel h6 {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Pangolin", serif;
+    font-size: 1.1vmax;
+}
+
+
+#page6 {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 0vw 0 9vw;
+    display: flex;
+    gap: 30px;
+}
+#page6 img {
+    width: 50vw;
+    height: 62vh;
+}
+
+#page6_part2 {
+    padding: 30px 50px 0 50px;
+    width: 40vw;
+    height: 62vh;
+}
+#page6_part2 h5 {
+    font-size: 2vmax;
+    font-family: "Waiting for the Sunrise", serif;
+}
+
+#page6_part2 h1 {
+    margin-top: 2vh;
+    width: 30vw;
+    font-family: "Bebas Neue", serif;
+    font-size: 4vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#page6_part2 p {
+    margin-top: 2vh;
+    font-weight: 400;
+    font-family: "Pangolin", serif;
+    color: #111;
+}
+
+#page6_part2>button {
+    margin-top: 2vh;
+    font-size: 1.2vmax;
+    padding: 0.8vmax 1.5vmax;
+    font-family: "Bebas Neue", serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+    cursor: pointer;
+}
